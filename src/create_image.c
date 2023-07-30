@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   create_image.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:28:04 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/24 11:59:41 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:51:39 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+/// @brief Create the images
+/// @param game The game structure
 void	create_image(t_game *game)
 {
 	game->asset.ch = mlx_xpm_file_to_image(game->mlx, "./textures/c01.xpm",

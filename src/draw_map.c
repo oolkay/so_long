@@ -3,15 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   draw_map.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:28:07 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/24 11:37:28 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:51:41 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+/// @brief Draws the map
+/// @param game Game structure
+/// @param i x coordinate
+/// @param j y coordinate
 void	draw_map_rest_2(t_game *game, int i, int j)
 {
 	if (game->map.map[i][j] == 'C')
@@ -32,6 +36,10 @@ void	draw_map_rest_2(t_game *game, int i, int j)
 	}
 }
 
+/// @brief Draws the map
+/// @param game Game structure
+/// @param i x coordinate
+/// @param j y coordinate
 void	draw_map_rest(t_game *game, int i, int j)
 {
 	int	height;
@@ -54,6 +62,8 @@ void	draw_map_rest(t_game *game, int i, int j)
 		draw_map_rest_2(game, i, j);
 }
 
+/// @brief Draws the map
+/// @param game Game structure
 void	draw_map(t_game *game)
 {
 	int	i;

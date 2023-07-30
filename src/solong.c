@@ -3,15 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   solong.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:28:38 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/23 17:06:41 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:52:11 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+
+/// @brief Main function
+/// @param argc Argument count
+/// @param argv Argument vector
 int	main(int argc, char **argv)
 {
 	t_game	game;

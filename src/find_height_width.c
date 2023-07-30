@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   find_height_width.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:28:11 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/17 18:39:33 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:51:45 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+/// @brief Finds the height and width of the map
+/// @param game Game structure
 void	find_height_width(t_game *game)
 {
 	int	i;

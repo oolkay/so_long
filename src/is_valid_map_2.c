@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   is_valid_map_2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:28:23 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/17 18:28:24 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:51:58 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+/// @brief Checks whether the map contains unknown elements
+/// @param game Game structure
 void	is_unknown_element(t_game *game)
 {
 	int		i;

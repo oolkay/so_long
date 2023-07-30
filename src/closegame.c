@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   closegame.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:27:38 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/24 12:25:06 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:51:37 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+/// @brief Closing game scenarios: win, lose, die
+/// @param game The game structure
+/// @param ch The character that represents the scenario
 int	close_game(t_game *game, char ch)
 {
 	mlx_destroy_image(game->mlx, game->asset.ch);
@@ -34,6 +37,8 @@ int	close_game(t_game *game, char ch)
 	exit (0);
 }
 
+/// @brief Closing game when the user clicks the red cross
+/// @param game The game structure
 int	close_game_mouse(t_game *game)
 {
 	mlx_destroy_image(game->mlx, game->asset.ch);

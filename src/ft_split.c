@@ -3,15 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:28:19 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/17 18:28:20 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:51:54 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+
+/// @brief Finds the length of the word
+/// @param str The string to be searched
+/// @param c Delimiter character
+/// @return Length of the word
 static int	wordslen(const char *str, char c)
 {
 	int	i;
@@ -24,6 +29,11 @@ static int	wordslen(const char *str, char c)
 	return (i);
 }
 
+
+/// @brief Finds the number of words in the string
+/// @param str The string to be searched
+/// @param c Delimiter character
+/// @return Word count
 static int	wordsnbr(const char *str, char c)
 {
 	int		i;
@@ -40,6 +50,11 @@ static int	wordsnbr(const char *str, char c)
 	return (rvalue);
 }
 
+
+/// @brief Splits the string according to the delimiter character
+/// @param s String to be split
+/// @param c Delimiter character
+/// @return Splitted string
 static char	*splitter(const char *s, char c)
 {
 	int		i;
@@ -56,6 +71,11 @@ static char	*splitter(const char *s, char c)
 	return (resultstr);
 }
 
+
+/// @brief Splits the string according to the delimiter character
+/// @param s String to be split
+/// @param c Delimiter character
+/// @return Two-dimensional char array that contains splitted strings
 char	**ft_split(const char *s, char c)
 {
 	char	**spltdstr;

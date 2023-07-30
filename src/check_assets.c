@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   check_assets.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:27:04 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/24 11:50:34 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:51:33 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+
+/// @brief Check if the assets are present
 void	check_assets_rest(void)
 {
 	int	fd;
@@ -30,6 +32,7 @@ void	check_assets_rest(void)
 	close(fd);
 }
 
+/// @brief Check if the assets are present
 void	check_assets(void)
 {
 	int	fd;

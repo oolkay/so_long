@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_error.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:28:15 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/21 15:28:32 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:51:50 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+/// @brief Prints error message and exits the program
+/// @param game Game structure
 void	ft_error_read(t_game *game)
 {
 	free(game->mlx);
@@ -20,6 +22,8 @@ void	ft_error_read(t_game *game)
 	exit(1);
 }
 
+/// @brief Prints error message and exits the program
+/// @param argc Number of arguments
 void	ft_error_format(int argc)
 {
 	write (2, "Error\n", 6);
@@ -34,6 +38,7 @@ void	ft_error_format(int argc)
 	exit(1);
 }
 
+/// @brief Prints error message and exits the program
 void	ft_error_asset(void)
 {
 	write (2, "Error\n", 6);
@@ -41,6 +46,9 @@ void	ft_error_asset(void)
 	exit(1);
 }
 
+/// @brief Prints error message and exits the program
+/// @param game Game structure
+/// @param c Error code
 void	ft_error_map(t_game *game, char c)
 {
 	free(game->mlx);

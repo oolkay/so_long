@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   read_map.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:28:33 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/23 17:43:02 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:52:06 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+/// @brief Splits the map into a two-dimensional char array
+/// @param game Game structure
+/// @param line Single line read from the xpm file
 void	split_map(t_game *game, char *line)
 {
 	game->map.map = ft_split(line, '\n');
@@ -21,6 +24,9 @@ void	split_map(t_game *game, char *line)
 	}
 }
 
+/// @brief Reads the map from the xpm file
+/// @param game Game structure
+/// @param argv Argument vector
 void	read_map(t_game *game, char **argv)
 {
 	char	*line;

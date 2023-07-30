@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   is_valid_map.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:28:26 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/23 15:15:13 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:52:00 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+
+/// @brief Checks if the map is surrounded by walls
+/// @param game Game structure
 void	is_surrounded_map(t_game *game)
 {
 	int	height;
@@ -36,6 +39,10 @@ void	is_surrounded_map(t_game *game)
 	}
 }
 
+/// @brief Checks elements of the map
+/// @param game Game structure
+/// @param p Player counter
+/// @param e Exit counter
 void	check_elements_map_rest(t_game *game, int p, int e)
 {
 	int	height;
@@ -63,6 +70,7 @@ void	check_elements_map_rest(t_game *game, int p, int e)
 		ft_error_map(game, 'e');
 }
 
+/// @brief Checks the elements of the map
 void	check_elements_map(t_game *game)
 {
 	int	p;
@@ -73,6 +81,8 @@ void	check_elements_map(t_game *game)
 	check_elements_map_rest(game, p, e);
 }
 
+/// @brief Checks the map is rectangular
+/// @param game Game structure
 void	is_rectangular_map(t_game *game)
 {
 	int	i;
@@ -86,6 +96,8 @@ void	is_rectangular_map(t_game *game)
 	}
 }
 
+/// @brief Checks the map is valid
+/// @param game Game structure
 void	is_valid_map(t_game *game)
 {
 	is_surrounded_map(game);

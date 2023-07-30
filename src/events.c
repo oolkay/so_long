@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   events.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:28:09 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/17 18:39:10 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:51:43 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+/// @brief Checks that all coins got collected
+/// @param game The game structure
+/// @return 1 if all coins got collected, 0 otherwise
 int	is_exit_open(t_game *game)
 {
 	if (game->para != 0)
@@ -35,6 +38,11 @@ int	special_events(char ch, t_game *game)
 	return (0);
 }
 
+/// @brief Checks if the move is valid
+/// @param game Game structure
+/// @param n Keycode
+/// @param flag_y Key W S flag
+/// @param flag_x Key A D flag
 void	did_player_move(t_game *game, int n, int flag_y, int flag_x)
 {
 	if ((n == W || n == S) && flag_y == 1)
@@ -51,6 +59,10 @@ void	did_player_move(t_game *game, int n, int flag_y, int flag_x)
 	}
 }
 
+/// @brief Checks if the move is valid, If valid, moves the player
+/// @param keycode The keycode
+/// @param game The game structure
+/// @return 0 on success
 int	key_events(int keycode, t_game *game)
 {
 	int	flag_y;

@@ -3,15 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   is_valid_format.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oolkay <olkayomer@42.kocaeli>              +#+  +:+       +#+        */
+/*   By: oolkay <o.olkay2021@gtu.edu.tr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/17 18:28:21 by oolkay            #+#    #+#             */
-/*   Updated: 2023/03/17 18:42:53 by oolkay           ###   ########.fr       */
+/*   Updated: 2023/07/30 14:51:56 by oolkay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
+/// @brief Checks whether the game executed with valid arguments
+/// @param argc Argument count
+/// @param argv Argument vector
 void	is_valid_format(int argc, char **argv)
 {
 	int	fd;
