@@ -1,9 +1,12 @@
 # so_long
 Simple 2D Game
 # How to execute
-First: ``` make```
-
-Then: ```./so_long  Maps/'validmap'```
+```bash
+git clone git@github.com:oolkay/so_long.git
+cd so_long
+make bonus
+./so_long_bonus maps/medium_bonus_map.ber
+```
 # Map
 You can create your own map as long as it adheres to the following rules:
 1. Map must be rectangular.
