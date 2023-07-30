@@ -5,7 +5,7 @@ Simple 2D Game
 git clone git@github.com:oolkay/so_long.git
 cd so_long
 make bonus
-./so_long_bonus maps/medium_bonus_map.ber
+./so_long_bonus Maps/'validmap'.ber
 ```
 # Map
 You can create your own map as long as it adheres to the following rules:
