@@ -1,8 +1,9 @@
 # so_long
 Simple 2D Game
 # How to execute
-1) Make
-2) ./so_long Maps/'validmap'
+First: ``` make```
+
+Then: ```./so_long  Maps/'validmap'```
 # Map
 You can create your own map as long as it adheres to the following rules:
 1. Map must be rectangular.
